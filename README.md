@@ -14,16 +14,23 @@ Software: PySpark 3.0.3, Amazon RDS, PGAdmin4, Google Colaboratory
 Using PySpark 3.0.3 on Google Colab, we imported the [Lawn and Garden reviews dataset](https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Lawn_and_Garden_v1_00.tsv.gz) from a [list of review datasets](https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt) and then transformed the data for analysis. During the transformation stage, we generated four tables that were then exported to PGAdmin using an RDS server. The four exported tables are shown below in Pictures 1.1 - 1.4.
 
 **Picture 1.1: Customers table includes the `customer_id` and a count of the number of reviews they've given**
-**** Insert customers_table image ****
+
+![Customers table](https://github.com/joshuanallen/Amazon_Vine_Analysis/blob/10a55b10976b9df1c278d90a2b861ebe3b7962c9/tables/customers_SQL_data.png)
+
 
 **Picture 1.2: Products table includes the `product_id` and `product_title`**
-**** Insert products table image ****
+
+![Products table](https://github.com/joshuanallen/Amazon_Vine_Analysis/blob/10a55b10976b9df1c278d90a2b861ebe3b7962c9/tables/products_SQL_table.png)
+
 
 **Picture 1.3: Review id table includes the `review_id`, `customer_id`, `product_id`, `product_parent`, and `review_date`**
-**** Insert review id table image ****
+
+![Review id table](https://github.com/joshuanallen/Amazon_Vine_Analysis/blob/10a55b10976b9df1c278d90a2b861ebe3b7962c9/tables/review_id_SQL_table.png)
+
 
 **Picture 1.4: Vine Table includes `review_id`, `star_rating`, `helpful_votes`, `total_votes`, vine program participation, and verified purchase from reviewer**
-**** insert vine table image ****
+![Vine Table](https://github.com/joshuanallen/Amazon_Vine_Analysis/blob/10a55b10976b9df1c278d90a2b861ebe3b7962c9/tables/vine_SQL_table.png)
+
 
 The vine table was then used to identify bias in the vine reviewers submissions compared to non-vine reviewers submissions by identifying the amount of 5-star (perfect) ratings as a percentage of the total votes.
 
@@ -43,7 +50,7 @@ Because the Vine participant 5-star review percentage (46%) is lower than the no
 ### Additional analysis to continue study
 1. A meta-analysis of *all* the datasets provided by category may give a better overall picture of the bias in the program as having a larger samepl size across multiple categories would limit any bias between categories.
 
-2. imit the dataset to confirmed buyers (`verified_purchase`) of the products. This would eliminate the possibility of fake reviews or troll reviews skewing data positively or negatively.
+2. Limit the dataset to confirmed buyers (`verified_purchase`) of the products. This would eliminate the possibility of fake reviews or troll reviews skewing data positively or negatively.
 
 
 3. Because rating systems are notoriously polarizing, we can eliminate the 1 and 5 star ratings and compare the outcomes using only the 2-4 star ratings.
