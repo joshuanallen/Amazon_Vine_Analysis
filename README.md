@@ -60,7 +60,7 @@ Removing the non-verified purchaser reviews shows higher 5-star ratings by perce
 ### Additional analysis to continue study
 1. A meta-analysis of *all* the datasets provided by category may give a better overall picture of the bias in the program as having a larger samepl size across multiple categories would limit any bias between categories.
 
-3. Because rating systems are notoriously polarizing, we can eliminate the 1 and 5 star ratings and compare the outcomes using only the 2-4 star ratings.
+2. Because rating systems are notoriously polarizing, we can eliminate the 1 and 5 star ratings and compare the outcomes using only the 2-4 star ratings.
 
 The data from non-paid reviews can be more polarizing, which would include more 1s and 5s because they are self motivated to provide a review due to a good or bad experience. This may skew the data away from the nuance of a 5 point ratings system.
 
@@ -68,7 +68,7 @@ This differs from "paid reviews" in the Vine program as they are motivated more 
 
 To account for the response bias between the two groups we should plot the responses to identify if this 1 and 5 star polarization exists in the data and is pervasive across additional datasets.
 
-4. Use NLP analysis to identify and remove false reviews, fake or duplicated reviews, and reviews that may apply to shipping or delivery issues and are not reflective on the product themselves.
+3. Use NLP analysis to identify and remove false reviews, fake or duplicated reviews, and reviews that may apply to shipping or delivery issues and are not reflective on the product themselves.
 
 ### Limitations of current dataset
 The data is limited to Lawn and Garden products, so additional datasets under different product categories may yield different results.
