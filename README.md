@@ -47,11 +47,18 @@ The vine table was then used to identify bias in the vine reviewers submissions 
 
 Because the Vine participant 5-star review percentage (46%) is lower than the non-Vine review percentage (49%), we can conclude there is seemingly no additional favorable bias towards the products amongst Vine reviewers when compared to non-Vine reviewers.
 
+### Removing reviews from non-verified purchasers from non-Vine participants
+1. Total Reviews:
+    - Verified Non-Vine participants: 30,577
+2. 5-Star Reviews:
+    - Verified Non-Vine participants: 15,908
+3. Percentage of 5-Star Reviews:
+    - Verified Non-Vine participants: 52.03%
+
+Removing the non-verified purchaser reviews shows higher 5-star ratings by percentage for non-Vine program products, therefore this also supports the idea of Vine reviews not being bias in favor of a product. The percentage of reviews receiving 5 stars for Vine products (46%) is lower than verified purchasers of non-Vine products (52%).
+
 ### Additional analysis to continue study
 1. A meta-analysis of *all* the datasets provided by category may give a better overall picture of the bias in the program as having a larger samepl size across multiple categories would limit any bias between categories.
-
-2. Limit the dataset to confirmed buyers (`verified_purchase`) of the products. This would eliminate the possibility of fake reviews or troll reviews skewing data positively or negatively.
-
 
 3. Because rating systems are notoriously polarizing, we can eliminate the 1 and 5 star ratings and compare the outcomes using only the 2-4 star ratings.
 
