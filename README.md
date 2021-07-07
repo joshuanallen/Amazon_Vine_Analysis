@@ -1,5 +1,4 @@
-# Amazon_Vine_Analysis
-Amazon reviews NLP analysis
+# Amazon Reviews Vine pay-to-review Program Analysis
 
 ## Purpose
 The purpose of this analysis is to determine if the Amazon Vine pay-to-review program generates a bias favorable for those products being reviewed.
